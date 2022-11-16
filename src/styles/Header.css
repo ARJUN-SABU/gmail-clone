@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  padding: 10px 15px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__left__iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.header__left__iconContainer:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+.header__left img {
+  width: 110px;
+  object-fit: contain;
+  margin-left: 5px;
+}
