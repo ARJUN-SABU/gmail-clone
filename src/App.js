@@ -1,5 +1,6 @@
 //components
 import Header from "./Components/Header.js";
+import Sidebar from "./Components/Sidebar.js";
 
 //styles
 import "./App.css";
@@ -8,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <h2>Starting the gmail-clone!</h2>
+      <Sidebar />
     </div>
   );
 }
