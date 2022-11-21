@@ -1,6 +1,13 @@
 //icons
 import { ImPencil } from "react-icons/im";
 import { CgInbox } from "react-icons/cg";
+import {
+  AiOutlineStar,
+  AiOutlineClockCircle,
+  AiOutlineSend,
+} from "react-icons/ai";
+import { MdLabelImportantOutline } from "react-icons/md";
+import { BiNote } from "react-icons/bi";
 
 //components
 import SidebarOptions from "./SidebarOptions";
@@ -19,9 +26,15 @@ function Sidebar() {
       </button>
 
       <SidebarOptions Icon={CgInbox} text="Inbox" count={100} selected={true} />
-      <SidebarOptions Icon={CgInbox} text="Inbox" count="" />
-      <SidebarOptions Icon={CgInbox} text="Inbox" count="" />
-      <SidebarOptions Icon={CgInbox} text="Inbox" count={71} />
+      <SidebarOptions Icon={AiOutlineStar} text="Starred" count="" />
+      <SidebarOptions Icon={AiOutlineClockCircle} text="Snoozed" count="" />
+      <SidebarOptions
+        Icon={MdLabelImportantOutline}
+        text="Important"
+        count={71}
+      />
+      <SidebarOptions Icon={AiOutlineSend} text="Sent" count="" />
+      <SidebarOptions Icon={BiNote} text="Draft" count={101} />
     </div>
   );
 }
