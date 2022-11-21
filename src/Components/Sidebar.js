@@ -1,5 +1,5 @@
 //icons
-import { RiPencilFill } from "react-icons/ri";
+import { ImPencil } from "react-icons/im";
 
 //styles
 import "../styles/Sidebar.css";
@@ -8,10 +8,10 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <button className="sidebar__composeBtn">
-        <span>
-          <RiPencilFill size={"23px"} />
+        <span className="sidebar__composeBtn__editSymbol">
+          <ImPencil size={"19px"} />
         </span>
-        <span>Compose</span>
+        <span className="sidebar__composeBtn__text">Compose</span>
       </button>
     </div>
   );
