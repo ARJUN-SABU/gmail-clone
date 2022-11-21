@@ -1,12 +1,24 @@
 .sidebar__composeBtn {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 20px 26px 20px 19px;
+  border-radius: 18px;
   border: none;
   outline: none;
   cursor: pointer;
   background-color: #c2e7ff;
+  transition: box-shadow 0.1s ease-in;
 }
-.sidebar__composeBtn span {
+.sidebar__composeBtn:hover {
+  box-shadow: 0px 3px 4px 1px rgb(235, 235, 235);
+}
+
+.sidebar__composeBtn__editSymbol {
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar__composeBtn__text {
+  font-size: 14px;
 }
