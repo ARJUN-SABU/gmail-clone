@@ -33,7 +33,12 @@ function Sidebar() {
         text="Important"
         count={71}
       />
-      <SidebarOptions Icon={AiOutlineSend} text="Sent" count="" />
+      <SidebarOptions
+        Icon={AiOutlineSend}
+        text="Sent"
+        count=""
+        selected={true}
+      />
       <SidebarOptions Icon={BiNote} text="Draft" count={101} />
     </div>
   );
