@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  width: 200px;
+  /* width: 200px; */
   padding: 8px 13px 8px 21px;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -24,7 +24,7 @@
 .sidebarOptions__text {
   font-size: 14px;
   margin-left: 15px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .sidebarOptions__count {
