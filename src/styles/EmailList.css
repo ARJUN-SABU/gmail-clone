@@ -1,0 +1,43 @@
+.emailList {
+  flex: 1;
+}
+.emailList__settings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.emailList__settings__left {
+  display: flex;
+  align-items: center;
+}
+
+.emailList__settings__right {
+  display: flex;
+  align-items: center;
+}
+.emailList__setting__iconContainer {
+  color: rgb(63, 63, 63);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* background-color: red; */
+  padding: 4px;
+  border-radius: 100%;
+  transition: 0.1s background-color ease-in;
+}
+
+.emailList__setting__left__iconContainer {
+  margin-right: 15px;
+}
+
+.emailList__setting__right__iconContainer {
+  margin-left: 15px;
+}
+
+.emailList__setting__iconContainer:hover {
+  background-color: rgb(215, 215, 215);
+}
+.emailList__setting__left__checkboxIcon {
+  border-radius: 2px;
+}
