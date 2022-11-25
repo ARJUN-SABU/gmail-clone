@@ -1,0 +1,24 @@
+.emailSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  border-bottom: 3px solid transparent;
+  padding: 18px 20px;
+  cursor: pointer;
+}
+
+.emailSection:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.emailSection p {
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.emailSection--active {
+  border-bottom: 3px solid #0058cb;
+  color: #0058cb;
+  font-weight: 600;
+}

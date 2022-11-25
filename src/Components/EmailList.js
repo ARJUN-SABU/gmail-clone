@@ -1,3 +1,6 @@
+//components
+import EmailSection from "./EmailSection";
+
 //icons
 import { AiFillCaretDown, AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import {
@@ -6,6 +9,9 @@ import {
   MdRefresh,
   MdMoreVert,
 } from "react-icons/md";
+import { CgInbox } from "react-icons/cg";
+import { BsTag } from "react-icons/bs";
+import { FaUserFriends } from "react-icons/fa";
 
 //styles
 import "../styles/EmailList.css";
@@ -37,6 +43,12 @@ function EmailList() {
             <AiOutlineRight size={"13px"} />
           </div>
         </div>
+      </div>
+
+      <div className="emailList__sections">
+        <EmailSection Icon={CgInbox} Text={"Primary"} Selected={true} />
+        <EmailSection Icon={BsTag} Text={"Promotions"} />
+        <EmailSection Icon={FaUserFriends} Text={"Social"} />
       </div>
     </div>
   );
