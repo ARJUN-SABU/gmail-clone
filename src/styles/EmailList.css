@@ -1,10 +1,14 @@
 .emailList {
   flex: 1;
+  background-color: white;
+  border-radius: 20px;
 }
 .emailList__settings {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* border: 1px solid black; */
+  padding: 8px 15px;
 }
 .emailList__settings__left {
   display: flex;
@@ -22,7 +26,7 @@
   justify-content: center;
   cursor: pointer;
   /* background-color: red; */
-  padding: 4px;
+  padding: 6px;
   border-radius: 100%;
   transition: 0.1s background-color ease-in;
 }
@@ -36,7 +40,7 @@
 }
 
 .emailList__setting__iconContainer:hover {
-  background-color: rgb(215, 215, 215);
+  background-color: rgb(231, 231, 231);
 }
 .emailList__setting__left__checkboxIcon {
   border-radius: 2px;
