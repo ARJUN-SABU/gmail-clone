@@ -1,10 +1,10 @@
 .emailSection {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   width: max-content;
   border-bottom: 3px solid transparent;
-  padding: 18px 20px;
+  padding: 18px 80px 18px 15px;
   cursor: pointer;
 }
 
