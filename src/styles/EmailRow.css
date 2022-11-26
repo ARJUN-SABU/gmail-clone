@@ -1,4 +1,20 @@
+.emailRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: relative; */
+}
 .emailRow__left {
   display: flex;
   align-items: center;
+}
+.emailRow__middle {
+  display: flex;
+  align-items: center;
+}
+
+.emailRow__rightOptions {
+  display: flex;
+  align-items: center;
+  /* position: absolute; */
 }
