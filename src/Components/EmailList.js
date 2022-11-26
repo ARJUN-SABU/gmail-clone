@@ -1,5 +1,6 @@
 //components
 import EmailSection from "./EmailSection";
+import EmailRow from "./EmailRow";
 
 //icons
 import { AiFillCaretDown, AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
@@ -49,6 +50,15 @@ function EmailList() {
         <EmailSection Icon={CgInbox} Text={"Primary"} Selected={true} />
         <EmailSection Icon={BsTag} Text={"Promotions"} />
         <EmailSection Icon={FaUserFriends} Text={"Social"} />
+      </div>
+
+      <div className="emailList__list">
+        <EmailRow
+          title="I am Title"
+          subject="I am subject"
+          description="I am description"
+          time={`${9} AM`}
+        />
       </div>
     </div>
   );
