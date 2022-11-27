@@ -59,6 +59,42 @@ function EmailList() {
           description="I am description"
           time={`${9} AM`}
         />
+        <EmailRow
+          title="I am Title"
+          subject="I am subject"
+          description="I am description"
+          time={`${9} AM`}
+        />
+        <EmailRow
+          title="I am Title"
+          subject="I am subject"
+          description="I am description"
+          time={`${9} AM`}
+        />
+        <EmailRow
+          title="I am Title"
+          subject="I am subject"
+          description="I am description"
+          time={`${9} AM`}
+        />
+        <EmailRow
+          title="I am Title"
+          subject="I am subject"
+          description="I am description"
+          time={`${9} AM`}
+        />
+        <EmailRow
+          title="I am Title"
+          subject="I am subject"
+          description="I am description"
+          time={`${9} AM`}
+        />
+        <EmailRow
+          title="I am Title"
+          subject="I am subject"
+          description="I am description"
+          time={`${9} AM`}
+        />
       </div>
     </div>
   );

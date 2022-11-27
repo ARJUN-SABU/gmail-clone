@@ -17,22 +17,24 @@ function EmailRow(props) {
     <div className="emailRow">
       <div className="emailRow__left">
         <div className="emailRow__icons">
-          <MdCheckBoxOutlineBlank />
+          <MdCheckBoxOutlineBlank size={"18px"} />
         </div>
         <div className="emailRow__icons">
-          <AiOutlineStar />
+          <AiOutlineStar size={"18px"} />
         </div>
         <div className="emailRow__icons">
-          <MdLabelImportantOutline />
+          <MdLabelImportantOutline size={"18px"} />
         </div>
-        <p>{props.title}</p>
+        <p className="emailRow__title">{props.title}</p>
       </div>
       <div className="emailRow__middle">
-        <p>{props.subject}</p>
-        <p>{props.description}</p>
+        <p className="emailRow__subject">{props.subject} - </p>
+        <p className="emailRow__description">
+          {props.description.substr(0, 150) + "..."}
+        </p>
       </div>
       <div className="emailRow__right">
-        <p>{props.time}</p>
+        <p className="emailRow__time">{props.time}</p>
       </div>
       <div className="emailRow__rightOptions">
         <div className="emailRow__icons">
