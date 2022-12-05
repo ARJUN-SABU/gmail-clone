@@ -2,11 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 0px 8px;
   /* border-top: 1px solid #e2e2e2; */
   border-bottom: 1px solid #e2e2e2;
   cursor: pointer;
-  /* position: relative; */
+  position: relative;
 }
 .emailRow:hover {
   /* border: 1px solid #a2a2a2; */
@@ -27,13 +27,29 @@
 .emailRow__rightOptions {
   display: flex;
   align-items: center;
-  /* position: absolute; */
+  background-color: white;
+  position: absolute;
+  right: 10px;
+}
+.emailRow__rightOptions--hide {
+  display: none;
 }
 .emailRow__icons {
   display: flex;
   align-items: center;
-  margin: 0 5px;
+  margin: 0 0px;
+  padding: 10px;
+  border-radius: 100%;
   color: #a1a1a1;
+  background-color: transparent;
+}
+
+.emailRow__icons:hover {
+  background-color: #f2f2f2;
+}
+
+.emailRow__icon--bold {
+  color: black;
 }
 
 .emailRow__title {
