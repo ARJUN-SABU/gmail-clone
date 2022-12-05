@@ -49,12 +49,12 @@ function EmailRow(props) {
         <div className="emailRow__icons">
           <MdLabelImportantOutline size={"18px"} />
         </div>
-        <p className="emailRow__title">{props.title}</p>
+        <p className="emailRow__title">{props.title.substring(0, 10)}</p>
       </div>
       <div className="emailRow__middle">
         <p className="emailRow__subject">{props.subject} - </p>
         <p className="emailRow__description">
-          {props.description.substr(0, 150) + "..."}
+          {props.description.substring(0, 90) + "..."}
         </p>
       </div>
       <div className="emailRow__right">
