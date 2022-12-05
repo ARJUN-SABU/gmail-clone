@@ -13,31 +13,35 @@ import "../styles/EmailRow.css";
 import { CgLock } from "react-icons/cg";
 
 function EmailRow(props) {
-  function showEmailRowRightOptions(event) {
-    event.target
+  function showEmailRowRightOptions(id) {
+    document
+      .querySelector(`.emailRow_${id}`)
       .querySelector(".emailRow__rightOptions")
       .classList.remove("emailRow__rightOptions--hide");
 
-    event.target
+    document
+      .querySelector(`.emailRow_${id}`)
       .querySelectorAll(".emailRow__icons")
       .forEach((emailRow) => emailRow.classList.add("emailRow__icon--bold"));
   }
 
-  function hideEmailRowRightOptions(event) {
-    event.target
+  function hideEmailRowRightOptions(id) {
+    document
+      .querySelector(`.emailRow_${id}`)
       .querySelector(".emailRow__rightOptions")
       .classList.add("emailRow__rightOptions--hide");
 
-    event.target
+    document
+      .querySelector(`.emailRow_${id}`)
       .querySelectorAll(".emailRow__icons")
       .forEach((emailRow) => emailRow.classList.remove("emailRow__icon--bold"));
   }
 
   return (
     <div
-      className="emailRow"
-      onMouseEnter={showEmailRowRightOptions}
-      onMouseLeave={hideEmailRowRightOptions}
+      className={`emailRow emailRow_${props.id}`}
+      onMouseEnter={() => showEmailRowRightOptions(props.id)}
+      onMouseLeave={() => hideEmailRowRightOptions(props.id)}
     >
       <div className="emailRow__left">
         <div className="emailRow__icons">
@@ -49,7 +53,7 @@ function EmailRow(props) {
         <div className="emailRow__icons">
           <MdLabelImportantOutline size={"18px"} />
         </div>
-        <p className="emailRow__title">{props.title.substring(0, 10)}</p>
+        <p className="emailRow__title">{props.title.substring(0, 8)}</p>
       </div>
       <div className="emailRow__middle">
         <p className="emailRow__subject">{props.subject} - </p>
