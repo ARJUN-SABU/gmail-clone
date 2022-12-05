@@ -54,46 +54,40 @@ function EmailList() {
 
       <div className="emailList__list">
         <EmailRow
-          title="I am Title"
-          subject="I am subject"
-          description="I am description"
-          time={`${9} AM`}
+          id={1}
+          title="Amazon"
+          subject="Offer Letter!"
+          description="Congratulations! We are pleased to inform you that you have been selected as an SDE at Amazon! Click on the link to fill the additional details!"
+          time={`${9}:00 AM`}
         />
         <EmailRow
-          title="I am Title"
-          subject="I am subject"
-          description="I am description"
-          time={`${9} AM`}
+          id={2}
+          title="Atlassian"
+          subject="Offer Letter!"
+          description="Congratulations! We are pleased to inform you that you have been selected as an SDE at Atlassian! Click on the link to fill the additional details!"
+          time={`${9}:00 AM`}
         />
         <EmailRow
-          title="I am Title"
-          subject="I am subject"
-          description="I am description"
-          time={`${9} AM`}
+          id={3}
+          title="Adobe"
+          subject="Offer Letter!"
+          description="Congratulations! We are pleased to inform you that you have been selected as an SDE at Adobe! Click on the link to fill the additional details!"
+          time={`${9}:00 AM`}
         />
         <EmailRow
-          title="I am Title"
-          subject="I am subject"
-          description="I am description"
-          time={`${9} AM`}
+          id={4}
+          title="Google"
+          subject="Offer Letter!"
+          description="Congratulations! We are pleased to inform you that you have been selected as an SDE at Google without competitive programming! Click on the link to fill the additional details!"
+          time={`${9}:00 AM`}
         />
+
         <EmailRow
-          title="I am Title"
-          subject="I am subject"
-          description="I am description"
-          time={`${9} AM`}
-        />
-        <EmailRow
-          title="I am Title"
-          subject="I am subject"
-          description="I am description"
-          time={`${9} AM`}
-        />
-        <EmailRow
-          title="I am Title"
-          subject="I am subject"
-          description="I am description"
-          time={`${9} AM`}
+          id={5}
+          title="JP MORGAN AND CHASE"
+          subject="Offer Letter!"
+          description="Congratulations! We are pleased to inform you that you have been selected as an SDE at Google without competitive programming! Click on the link to fill the additional details!"
+          time={`${9}:00 AM`}
         />
       </div>
     </div>

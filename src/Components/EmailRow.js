@@ -13,8 +13,36 @@ import "../styles/EmailRow.css";
 import { CgLock } from "react-icons/cg";
 
 function EmailRow(props) {
+  function showEmailRowRightOptions(id) {
+    document
+      .querySelector(`.emailRow_${id}`)
+      .querySelector(".emailRow__rightOptions")
+      .classList.remove("emailRow__rightOptions--hide");
+
+    document
+      .querySelector(`.emailRow_${id}`)
+      .querySelectorAll(".emailRow__icons")
+      .forEach((emailRow) => emailRow.classList.add("emailRow__icon--bold"));
+  }
+
+  function hideEmailRowRightOptions(id) {
+    document
+      .querySelector(`.emailRow_${id}`)
+      .querySelector(".emailRow__rightOptions")
+      .classList.add("emailRow__rightOptions--hide");
+
+    document
+      .querySelector(`.emailRow_${id}`)
+      .querySelectorAll(".emailRow__icons")
+      .forEach((emailRow) => emailRow.classList.remove("emailRow__icon--bold"));
+  }
+
   return (
-    <div className="emailRow">
+    <div
+      className={`emailRow emailRow_${props.id}`}
+      onMouseEnter={() => showEmailRowRightOptions(props.id)}
+      onMouseLeave={() => hideEmailRowRightOptions(props.id)}
+    >
       <div className="emailRow__left">
         <div className="emailRow__icons">
           <MdCheckBoxOutlineBlank size={"18px"} />
@@ -25,29 +53,29 @@ function EmailRow(props) {
         <div className="emailRow__icons">
           <MdLabelImportantOutline size={"18px"} />
         </div>
-        <p className="emailRow__title">{props.title}</p>
+        <p className="emailRow__title">{props.title.substring(0, 8)}</p>
       </div>
       <div className="emailRow__middle">
         <p className="emailRow__subject">{props.subject} - </p>
         <p className="emailRow__description">
-          {props.description.substr(0, 150) + "..."}
+          {props.description.substring(0, 90) + "..."}
         </p>
       </div>
       <div className="emailRow__right">
         <p className="emailRow__time">{props.time}</p>
       </div>
-      <div className="emailRow__rightOptions">
+      <div className="emailRow__rightOptions emailRow__rightOptions--hide">
         <div className="emailRow__icons">
-          <BiArchiveIn />
+          <BiArchiveIn size={"18px"} />
         </div>
         <div className="emailRow__icons">
-          <MdDeleteOutline />
+          <MdDeleteOutline size={"18px"} />
         </div>
         <div className="emailRow__icons">
-          <MdMailOutline />
+          <MdMailOutline size={"18px"} />
         </div>
         <div className="emailRow__icons">
-          <AiOutlineClockCircle />
+          <AiOutlineClockCircle size={"18px"} />
         </div>
       </div>
     </div>

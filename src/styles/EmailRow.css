@@ -2,44 +2,65 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  /* border-top: 1px solid #e2e2e2; */
+  padding: 0px 18px 0px 8px;
   border-bottom: 1px solid #e2e2e2;
   cursor: pointer;
-  /* position: relative; */
+  position: relative;
 }
 .emailRow:hover {
   /* border: 1px solid #a2a2a2; */
-  border-left: 1px solid #a2a2a2;
+  /* border-left: 1px solid #a2a2a2;
   border-right: 1px solid #a2a2a2;
-  border-bottom: 1px solid #a2a2a2;
-  box-shadow: 2px 1px 5px 0px rgb(177, 177, 177);
+  border-bottom: 1px solid #a2a2a2; */
+  box-shadow: 1px 1px 2px 0px rgb(188, 188, 188);
 }
 .emailRow__left {
   display: flex;
   align-items: center;
+  width: 196px;
 }
 .emailRow__middle {
   display: flex;
   align-items: center;
+  flex: 1;
+  padding-left: 49px;
+  margin-right: 40px;
+  justify-content: left;
 }
 
 .emailRow__rightOptions {
   display: flex;
   align-items: center;
-  /* position: absolute; */
+  background-color: white;
+  position: absolute;
+  padding: 0 10px;
+  right: 5px;
+}
+.emailRow__rightOptions--hide {
+  display: none;
 }
 .emailRow__icons {
   display: flex;
   align-items: center;
-  margin: 0 5px;
+  margin: 0 -5px;
+  padding: 13px;
+  border-radius: 100%;
   color: #a1a1a1;
+  background-color: transparent;
+}
+
+.emailRow__icons:hover {
+  background-color: #f2f2f2;
+}
+
+.emailRow__icon--bold {
+  color: black;
 }
 
 .emailRow__title {
   font-weight: 700;
-  font-size: 14px;
-  margin-left: 12px;
+  font-size: 15px;
+  padding: 12px 0 12px 8px;
 }
 
 .emailRow__subject {
@@ -50,8 +71,9 @@
 
 .emailRow__description {
   color: #414141;
+  font-size: 14px;
 }
 .emailRow__time {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 12px;
 }
