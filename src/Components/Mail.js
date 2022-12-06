@@ -1,5 +1,6 @@
 //components
 import MailToolIcon from "./MailToolIcon";
+import { useNavigate } from "react-router-dom";
 
 //styles
 import "../styles/Mail.css";
@@ -20,13 +21,15 @@ import {
   AiOutlineRight,
 } from "react-icons/ai";
 import { BsFolderSymlink } from "react-icons/bs";
+import { Navigate } from "react-router-dom";
 
 function Mail() {
+  const navigate = useNavigate();
   return (
     <div className="mail">
       <div className="mail__tools">
         <div className="mail__tools__left">
-          <div className="mail__tool__icon">
+          <div className="mail__tool__icon" onClick={() => navigate("/")}>
             <MailToolIcon
               Icon={IoMdArrowBack}
               iconSize={18}
