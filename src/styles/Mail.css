@@ -1,0 +1,43 @@
+.mail {
+  background-color: white;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.mail__tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+
+.mail__tools__left {
+  display: flex;
+  align-items: center;
+}
+
+.mail__tools__right {
+  display: flex;
+  align-items: center;
+}
+
+.mail__tools__left__iconSet {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+/* .mail__tool__icon {
+  cursor: pointer;
+  padding: 13px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+} */
+
+/* .mail__tool__icon:hover {
+  background-color: rgb(238, 238, 238);
+} */

@@ -1,3 +1,6 @@
+//packages
+import { useNavigate } from "react-router-dom";
+
 //icons
 import { AiOutlineStar, AiOutlineClockCircle } from "react-icons/ai";
 import {
@@ -13,6 +16,8 @@ import "../styles/EmailRow.css";
 import { CgLock } from "react-icons/cg";
 
 function EmailRow(props) {
+  const navigate = useNavigate();
+
   function showEmailRowRightOptions(id) {
     document
       .querySelector(`.emailRow_${id}`)
@@ -40,6 +45,7 @@ function EmailRow(props) {
   return (
     <div
       className={`emailRow emailRow_${props.id}`}
+      onClick={() => navigate("/mail")}
       onMouseEnter={() => showEmailRowRightOptions(props.id)}
       onMouseLeave={() => hideEmailRowRightOptions(props.id)}
     >
