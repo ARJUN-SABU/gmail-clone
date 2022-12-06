@@ -56,25 +56,45 @@ function Mail() {
 
           <div className="mail__tools__left__iconSet">
             <div className="mail__tool__icon">
-              <AiOutlineMail size={"18px"} />
+              <MailToolIcon
+                Icon={AiOutlineMail}
+                iconSize={18}
+                text={"Mark as unread"}
+              />
             </div>
             <div className="mail__tool__icon">
-              <AiOutlineClockCircle size={"18px"} />
+              <MailToolIcon
+                Icon={AiOutlineClockCircle}
+                iconSize={18}
+                text={"Snooze"}
+              />
             </div>
             <div className="mail__tool__icon">
-              <MdOutlineAddTask size={"18px"} />
+              <MailToolIcon
+                Icon={MdOutlineAddTask}
+                iconSize={18}
+                text={"Add to tasks"}
+              />
             </div>
           </div>
 
           <div className="mail__tools__left__iconSet">
             <div className="mail__tool__icon">
-              <BsFolderSymlink size={"18px"} />
+              <MailToolIcon
+                Icon={BsFolderSymlink}
+                iconSize={18}
+                text={"Move to"}
+              />
             </div>
             <div className="mail__tool__icon">
-              <MdLabelOutline size={"18px"} />
+              <MailToolIcon
+                Icon={MdLabelOutline}
+                iconSize={18}
+                text={"Labels"}
+              />
             </div>
             <div className="mail__tool__icon">
-              <IoMdMore size={"18px"} />
+              <MailToolIcon Icon={IoMdMore} iconSize={18} text={"More"} />
             </div>
           </div>
         </div>
@@ -87,14 +107,6 @@ function Mail() {
             <AiOutlineRight />
           </div>
         </div>
-      </div>
-
-      <div>
-        <MailToolIcon
-          Icon={MdOutlineReport}
-          iconSize={18}
-          text={"Report Spam"}
-        />
       </div>
     </div>
   );
