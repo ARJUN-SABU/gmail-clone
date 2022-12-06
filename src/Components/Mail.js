@@ -1,3 +1,6 @@
+//components
+import MailToolIcon from "./MailToolIcon";
+
 //styles
 import "../styles/Mail.css";
 
@@ -24,42 +27,54 @@ function Mail() {
       <div className="mail__tools">
         <div className="mail__tools__left">
           <div className="mail__tool__icon">
-            <IoMdArrowBack />
+            <MailToolIcon
+              Icon={IoMdArrowBack}
+              iconSize={18}
+              text={"Back to inbox"}
+            />
           </div>
 
           <div className="mail__tools__left__iconSet">
             <div className="mail__tool__icon">
-              <BiArchiveIn />
+              <MailToolIcon Icon={BiArchiveIn} iconSize={18} text={"Archive"} />
             </div>
             <div className="mail__tool__icon">
-              <MdOutlineReport />
+              <MailToolIcon
+                Icon={MdOutlineReport}
+                iconSize={18}
+                text={"Report spam"}
+              />
             </div>
             <div className="mail__tool__icon">
-              <MdDeleteOutline />
-            </div>
-          </div>
-
-          <div className="mail__tools__left__iconSet">
-            <div className="mail__tool__icon">
-              <AiOutlineMail />
-            </div>
-            <div className="mail__tool__icon">
-              <AiOutlineClockCircle />
-            </div>
-            <div className="mail__tool__icon">
-              <MdOutlineAddTask />
+              <MailToolIcon
+                Icon={MdDeleteOutline}
+                iconSize={18}
+                text={"Delete"}
+              />
             </div>
           </div>
 
           <div className="mail__tools__left__iconSet">
             <div className="mail__tool__icon">
-              <BsFolderSymlink />
+              <AiOutlineMail size={"18px"} />
             </div>
             <div className="mail__tool__icon">
-              <MdLabelOutline />
+              <AiOutlineClockCircle size={"18px"} />
             </div>
             <div className="mail__tool__icon">
-              <IoMdMore />
+              <MdOutlineAddTask size={"18px"} />
+            </div>
+          </div>
+
+          <div className="mail__tools__left__iconSet">
+            <div className="mail__tool__icon">
+              <BsFolderSymlink size={"18px"} />
+            </div>
+            <div className="mail__tool__icon">
+              <MdLabelOutline size={"18px"} />
+            </div>
+            <div className="mail__tool__icon">
+              <IoMdMore size={"18px"} />
             </div>
           </div>
         </div>
@@ -72,6 +87,14 @@ function Mail() {
             <AiOutlineRight />
           </div>
         </div>
+      </div>
+
+      <div>
+        <MailToolIcon
+          Icon={MdOutlineReport}
+          iconSize={18}
+          text={"Report Spam"}
+        />
       </div>
     </div>
   );

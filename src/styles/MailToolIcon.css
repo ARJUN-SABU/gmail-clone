@@ -1,0 +1,43 @@
+.mailToolIcon {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.mailToolIcon__icon {
+  cursor: pointer;
+  width: max-content;
+  padding: 12px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.mailToolIcon__icon:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.mailToolIcon__toast {
+  background-color: rgb(95, 95, 95);
+  font-weight: 600;
+  color: white;
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: 5px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -28px;
+  transition: 0.2s all ease-in;
+}
+
+.mailToolIcon__toast--hide {
+  background-color: transparent;
+  color: transparent;
+  visibility: hidden;
+}
