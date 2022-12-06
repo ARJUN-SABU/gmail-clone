@@ -1,0 +1,26 @@
+.mail {
+  background-color: white;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.mail__tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mail__tools__left {
+  display: flex;
+  align-items: center;
+}
+
+.mail__tools__right {
+  display: flex;
+  align-items: center;
+}
+
+.mail__tools__left__iconSet {
+  display: flex;
+  align-items: center;
+}
