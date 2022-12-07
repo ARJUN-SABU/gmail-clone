@@ -102,12 +102,12 @@ function Mail() {
           </div>
         </div>
         <div className="mail__tools__right">
-          <div className="mail__tools__icon">
-            <AiOutlineLeft />
+          <div className="mail__tools__rightIcon">
+            <AiOutlineLeft size={"12px"} />
           </div>
 
-          <div className="mail__tools__icon">
-            <AiOutlineRight />
+          <div className="mail__tools__rightIcon">
+            <AiOutlineRight size={"12px"} />
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 5px;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 .mail__tools__left {
@@ -20,6 +20,7 @@
 .mail__tools__right {
   display: flex;
   align-items: center;
+  padding-right: 40px;
 }
 
 .mail__tools__left__iconSet {
@@ -28,7 +29,7 @@
   margin: 0 10px;
 }
 
-/* .mail__tool__icon {
+.mail__tools__rightIcon {
   cursor: pointer;
   padding: 13px;
   border-radius: 100%;
@@ -36,8 +37,8 @@
   align-items: center;
   justify-content: center;
   background-color: transparent;
-} */
+}
 
-/* .mail__tool__icon:hover {
+.mail__tools__rightIcon:hover {
   background-color: rgb(238, 238, 238);
-} */
+}
