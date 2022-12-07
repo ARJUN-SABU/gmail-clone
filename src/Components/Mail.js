@@ -13,18 +13,27 @@ import {
   MdDeleteOutline,
   MdOutlineAddTask,
   MdLabelOutline,
+  MdLabelImportantOutline,
+  MdLabelImportant,
 } from "react-icons/md";
 import {
   AiOutlineClockCircle,
   AiOutlineMail,
   AiOutlineLeft,
   AiOutlineRight,
+  AiOutlinePrinter,
 } from "react-icons/ai";
 import { BsFolderSymlink } from "react-icons/bs";
-import { Navigate } from "react-router-dom";
+import { TfiNewWindow } from "react-icons/tfi";
 
 function Mail() {
   const navigate = useNavigate();
+
+  function hideAndShowLabel(labelToHide, labelToShow) {
+    document.querySelector(`.${labelToHide}`).style.display = "none";
+    document.querySelector(`.${labelToShow}`).style.display = "flex";
+  }
+
   return (
     <div className="mail">
       <div className="mail__tools">
@@ -110,6 +119,60 @@ function Mail() {
             <AiOutlineRight size={"12px"} />
           </div>
         </div>
+      </div>
+
+      <div className="mail__body">
+        <div className="mail__body__header">
+          <div className="mail__body__header__left">
+            <h1>This is a sample subject title!</h1>
+            <div className="mail__body__header__left__importantLabel">
+              <div
+                className="mail__body__header__left__importantLabel__outline"
+                onClick={() =>
+                  hideAndShowLabel(
+                    "mail__body__header__left__importantLabel__outline",
+                    "mail__body__header__left__importantLabel__dark"
+                  )
+                }
+              >
+                <MailToolIcon
+                  Icon={MdLabelImportantOutline}
+                  iconSize={18}
+                  text={"Mark important"}
+                />
+              </div>
+              <div
+                className="mail__body__header__left__importantLabel__dark"
+                onClick={() =>
+                  hideAndShowLabel(
+                    "mail__body__header__left__importantLabel__dark",
+                    "mail__body__header__left__importantLabel__outline"
+                  )
+                }
+              >
+                <MailToolIcon
+                  Icon={MdLabelImportant}
+                  iconSize={18}
+                  text={"Mark not important"}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="mail__body__header__right">
+            <MailToolIcon
+              Icon={AiOutlinePrinter}
+              iconSize={18}
+              text={"Print all"}
+            />
+            <MailToolIcon
+              Icon={TfiNewWindow}
+              iconSize={18}
+              text={"In new window"}
+            />
+          </div>
+        </div>
+        <div className="mail__body__middle"></div>
+        <div className="mail__body__content"></div>
       </div>
     </div>
   );

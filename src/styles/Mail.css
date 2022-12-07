@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 5px;
-  /* border-bottom: 1px solid black; */
+  border-bottom: 1px solid black;
 }
 
 .mail__tools__left {
@@ -41,4 +41,8 @@
 
 .mail__tools__rightIcon:hover {
   background-color: rgb(238, 238, 238);
+}
+
+.mail__body__header__left__importantLabel__dark {
+  display: none;
 }
