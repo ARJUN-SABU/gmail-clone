@@ -125,13 +125,15 @@ function Mail() {
         <div className="mail__body__header">
           <div className="mail__body__header__left">
             <h1>This is a sample subject title!</h1>
-            <div className="mail__body__header__left__importantLabel">
+          </div>
+          <div className="mail__body__header__right">
+            <div className="mail__body__header__right__importantLabel">
               <div
-                className="mail__body__header__left__importantLabel__outline"
+                className="mail__body__header__right__importantLabel__outline"
                 onClick={() =>
                   hideAndShowLabel(
-                    "mail__body__header__left__importantLabel__outline",
-                    "mail__body__header__left__importantLabel__dark"
+                    "mail__body__header__right__importantLabel__outline",
+                    "mail__body__header__right__importantLabel__dark"
                   )
                 }
               >
@@ -142,11 +144,11 @@ function Mail() {
                 />
               </div>
               <div
-                className="mail__body__header__left__importantLabel__dark"
+                className="mail__body__header__right__importantLabel__dark"
                 onClick={() =>
                   hideAndShowLabel(
-                    "mail__body__header__left__importantLabel__dark",
-                    "mail__body__header__left__importantLabel__outline"
+                    "mail__body__header__right__importantLabel__dark",
+                    "mail__body__header__right__importantLabel__outline"
                   )
                 }
               >
@@ -157,8 +159,6 @@ function Mail() {
                 />
               </div>
             </div>
-          </div>
-          <div className="mail__body__header__right">
             <MailToolIcon
               Icon={AiOutlinePrinter}
               iconSize={18}
@@ -166,7 +166,7 @@ function Mail() {
             />
             <MailToolIcon
               Icon={TfiNewWindow}
-              iconSize={18}
+              iconSize={15}
               text={"In new window"}
             />
           </div>

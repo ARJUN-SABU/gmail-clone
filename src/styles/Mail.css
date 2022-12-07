@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 5px;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 .mail__tools__left {
@@ -43,6 +43,32 @@
   background-color: rgb(238, 238, 238);
 }
 
-.mail__body__header__left__importantLabel__dark {
+.mail__body__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px 20px 70px;
+}
+
+.mail__body__header__left {
+  display: flex;
+  align-items: center;
+  padding-right: 100px;
+}
+
+.mail__body__header__right {
+  display: flex;
+  align-items: center;
+  align-self: start;
+  justify-content: space-between;
+}
+
+.mail__body__header__left h1 {
+  font-weight: 400;
+  font-size: 24px;
+  color: #242424;
+}
+
+.mail__body__header__right__importantLabel__dark {
   display: none;
 }
