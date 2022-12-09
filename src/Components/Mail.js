@@ -171,7 +171,10 @@ function Mail() {
             />
           </div>
         </div>
-        <div className="mail__body__middle"></div>
+        <div className="mail__body__middle">
+          <div className="mail__body__middle__left"></div>
+          <div className="mail__body__middle__right"></div>
+        </div>
         <div className="mail__body__content"></div>
       </div>
     </div>
