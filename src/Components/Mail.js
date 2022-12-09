@@ -25,6 +25,7 @@ import {
 } from "react-icons/ai";
 import { BsFolderSymlink } from "react-icons/bs";
 import { TfiNewWindow } from "react-icons/tfi";
+import { FaUserCircle } from "react-icons/fa";
 
 function Mail() {
   const navigate = useNavigate();
@@ -172,7 +173,20 @@ function Mail() {
           </div>
         </div>
         <div className="mail__body__middle">
-          <div className="mail__body__middle__left"></div>
+          <div className="mail__body__middle__left">
+            <div>
+              <FaUserCircle />
+            </div>
+            <div>
+              <div>
+                <p>User</p>
+                <p>{`<user@gmail.com>`}</p>
+              </div>
+              <div>
+                <p>to me</p>
+              </div>
+            </div>
+          </div>
           <div className="mail__body__middle__right"></div>
         </div>
         <div className="mail__body__content"></div>
