@@ -72,3 +72,30 @@
 .mail__body__header__right__importantLabel__dark {
   display: none;
 }
+
+.mail__body__middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px 10px 40px;
+}
+.mail__body__middle__left {
+  display: flex;
+  align-items: center;
+}
+
+.mail__body__middle__left__mailInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.mail__body__middle__left__senderInfo {
+  display: flex;
+  align-items: center;
+}
+
+.mail__body__middle__right {
+  display: flex;
+  align-items: center;
+}
