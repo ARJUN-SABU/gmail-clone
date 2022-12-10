@@ -72,6 +72,13 @@
 .mail__body__header__right__importantLabel__dark {
   display: none;
 }
+
+.mail__body__middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px 10px 40px;
+}
 .mail__body__middle__left {
   display: flex;
   align-items: center;
