@@ -87,6 +87,7 @@
 .mail__body__middle__left__mailInfo {
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
 }
 
 .mail__body__middle__left__senderInfo {
