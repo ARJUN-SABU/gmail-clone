@@ -72,3 +72,17 @@
 .mail__body__header__right__importantLabel__dark {
   display: none;
 }
+.mail__body__middle__left {
+  display: flex;
+  align-items: center;
+}
+
+.mail__body__middle__left__mailInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.mail__body__middle__left__senderInfo {
+  display: flex;
+  align-items: center;
+}
