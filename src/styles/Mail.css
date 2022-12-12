@@ -93,6 +93,23 @@
 .mail__body__middle__left__senderInfo {
   display: flex;
   align-items: center;
+  margin-bottom: 3px;
+}
+
+.mail__body__middle__left__senderInfo .userName {
+  font-weight: 700;
+  font-size: 15px;
+  margin-right: 6px;
+}
+
+.mail__body__middle__left__senderInfo .userEmail {
+  font-size: 13px;
+  color: #181818;
+}
+
+.mail__body__middle__left__reciepientInfo {
+  font-size: 13px;
+  color: #181818;
 }
 
 .mail__body__middle__right {

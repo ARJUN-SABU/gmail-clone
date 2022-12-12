@@ -177,12 +177,12 @@ function Mail() {
         <div className="mail__body__middle">
           <div className="mail__body__middle__left">
             <div>
-              <FaUserCircle size={40} />
+              <FaUserCircle size={40} color={"#68a8e1"} />
             </div>
             <div className="mail__body__middle__left__mailInfo">
               <div className="mail__body__middle__left__senderInfo">
-                <p>User</p>
-                <p>{`<user@gmail.com>`}</p>
+                <p className="userName">User</p>
+                <p className="userEmail">{`<user@gmail.com>`}</p>
               </div>
               <div className="mail__body__middle__left__reciepientInfo">
                 <p>to me</p>
