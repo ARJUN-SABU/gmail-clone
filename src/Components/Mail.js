@@ -205,7 +205,20 @@ function Mail() {
             </div>
           </div>
         </div>
-        <div className="mail__body__content"></div>
+        <div className="mail__body__content">
+          <p>
+            Hello this is the mail body content. Hello this is the mail body
+            content. Hello this is the mail body content. Hello this is the mail
+            body content. Hello this is the mail body content. Hello this is the
+            mail body content.Hello this is the mail body content. Hello this is
+            the mail body content. Hello this is the mail body content.Hello
+            this is the mail body content. Hello this is the mail body content.
+            Hello this is the mail body content.Hello this is the mail body
+            content. Hello this is the mail body content. Hello this is the mail
+            body content.Hello this is the mail body content. Hello this is the
+            mail body content. Hello this is the mail body content.
+          </p>
+        </div>
       </div>
     </div>
   );
